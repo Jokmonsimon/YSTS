@@ -24,6 +24,12 @@ const course = {
     middleName: 'Nathan',
     lastName: 'Junior',
   },
+  changeCourseStatus: function (courseStatus) {
+    this.status = courseStatus;
+  },
 };
 
-console.log(course);
+console.log('The Course Object', course);
+console.log('The Course Status Before:', course.status);
+course.changeCourseStatus('Not Approved');
+console.log('The Cousre status After:', course.status);
