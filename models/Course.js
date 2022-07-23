@@ -14,15 +14,15 @@ const course = {
   },
   instructorId: {
     id: 1,
-    firstName: 'Ojok',
+    firstName: 'Akello',
     middleName: '',
-    lastName: 'Simon Peter',
+    lastName: 'Nancy',
   },
   studentId: {
     id: 1,
-    firstName: 'Ojok',
-    middleName: '',
-    lastName: 'Simon Peter',
+    firstName: 'Rwotomiya',
+    middleName: 'Nathan',
+    lastName: 'Junior',
   },
 };
 
