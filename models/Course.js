@@ -1,35 +1,38 @@
-const course = {
-  id: 1,
-  code: '2201',
-  name: 'Computer Literacy',
-  duration: '3 Months',
-  status: 'Pending',
-  createdAt: '23/07/2022',
-  updatedAt: '23/07/2022',
-  userId: {
-    id: 1,
-    firstName: 'Ojok',
-    middleName: '',
-    lastName: 'Simon Peter',
-  },
-  instructorId: {
-    id: 1,
-    firstName: 'Akello',
-    middleName: '',
-    lastName: 'Nancy',
-  },
-  studentId: {
-    id: 1,
-    firstName: 'Rwotomiya',
-    middleName: 'Nathan',
-    lastName: 'Junior',
-  },
-  changeCourseStatus: function (courseStatus) {
-    this.status = courseStatus;
-  },
-};
+/**
+ * Creating Classes:
+ *
+ * Class declaration: class Name {}
+ * Class expression: const Name = class {}
+ */
 
-console.log('The Course Object', course);
-console.log('The Course Status Before:', course.status);
-course.changeCourseStatus('Not Approved');
-console.log('The Cousre status After:', course.status);
+class Course {
+  constructor(
+    // Define Parameters
+    id,
+    code,
+    name,
+    duration,
+    status,
+    courseType,
+    createdAt,
+    updatedAt,
+    userId,
+    instructorId,
+    studentId
+  ) {
+    // Define Properties
+    this.id = id;
+    this.code = code;
+    this.name = name;
+    this.duration = duration;
+    this.status = status;
+    this.courseType = courseType;
+    this.createdAt = createdAt;
+    this.updatedAt = updatedAt;
+    this.userId = userId;
+    this.instructorId = instructorId;
+    this.studentId = studentId;
+  }
+}
+
+export default Course;
