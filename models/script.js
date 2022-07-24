@@ -17,3 +17,8 @@ const createCourse = new Course(
 console.log('Course Object:', createCourse);
 console.log('Course Name:', createCourse.name);
 console.log('Course Code:', createCourse.code);
+
+// Update Course name using method
+console.log('Course name Before:', createCourse.name);
+createCourse.changeName('Introduction to Computer Litearcy');
+console.log('Course Name After:', createCourse.name);
