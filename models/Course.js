@@ -33,6 +33,11 @@ class Course {
     this.instructorId = instructorId;
     this.studentId = studentId;
   }
+
+  // Add Methods Like Functions
+  changeName(updateName) {
+    this.name = updateName;
+  }
 }
 
 export default Course;
