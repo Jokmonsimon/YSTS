@@ -33,7 +33,9 @@ const Student = class {
     nextOfKinRelationship,
     nextOfKinCurrentAddress,
     nextOfKinEmailAddress,
-    nextOfKinTelephone
+    nextOfKinTelephone,
+    createdAt,
+    updatedAt
   ) {
     // Define Properties
     this.id = id;
@@ -62,6 +64,22 @@ const Student = class {
     this.nextOfKinCurrentAddress = nextOfKinCurrentAddress;
     this.nextOfKinEmailAddress = nextOfKinEmailAddress;
     this.nextOfKinTelephone = nextOfKinTelephone;
+    this.createdAt = createdAt;
+    this.updatedAt = updatedAt;
+  }
+  numberOfDays() {
+    let now = new Date();
+    let dayCreatedAt = new Date(this.createdAt);
+    let daysElapsed = now - dayCreatedAt; // Elapsed time in seconds
+    let daysSinceCreated = Math.floor(daysElapsed / (1000 * 3600 * 24));
+    return daysSinceCreated;
+  }
+  daysUpdated() {
+    let now = new Date();
+    let dayUpdatedAt = new Date(this.updatedAt);
+    let daysElapsed = now - dayUpdatedAt; // Elapsed time in seconds
+    let daysSinceUpdatedAt = Math.floor(daysElapsed / (1000 * 3600 * 24));
+    return daysSinceUpdatedAt;
   }
 };
 
