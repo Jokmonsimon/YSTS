@@ -53,11 +53,26 @@ const createStudent = new Student(
   'Spouse',
   'Gulu City',
   'aber@gmail.com',
-  '+256777777778'
+  '+256777777778',
+  'June 10 2022 16:00:00 EST',
+  '22 July 2022 18:38:53 EST'
 );
 
 console.log('Student Object:', createStudent);
 console.log(
   'Student Name:',
   createStudent.surname + ' ' + createStudent.otherNames
+);
+
+console.log('Created At:', createStudent.createdAt);
+console.log('Updated At:', createStudent.updatedAt);
+
+console.log(
+  'Number of Days since Created:',
+  'Created ' + createStudent.numberOfDays() + ' days ago'
+);
+
+console.log(
+  'Number of Days since last Updated:',
+  'Updated ' + createStudent.daysUpdated() + ' days ago'
 );
